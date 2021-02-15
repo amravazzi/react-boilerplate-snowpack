@@ -8,6 +8,8 @@ const resources = {
       change_lang: "Change the language",
       increment: "aumenta",
       decrement: "diminui",
+      laoding_todo: "Carregando #{{todo}}...",
+      laoding_users: "Carregando usuários...",
     },
   },
   en: {
@@ -16,6 +18,8 @@ const resources = {
       change_lang: "Mudar a língua",
       increment: "increment",
       decrement: "decrement",
+      laoding_todo: "Loading #{{todo}}...",
+      laoding_users: "Loading users...",
     },
   },
 };
