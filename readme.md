@@ -1,19 +1,14 @@
 # React boilerplate
 
 This repo has a boilerplate example to start a react app without using create-react-app. The stack is:
-- React 17 + React Dom
-- i18next for localization
-- esbuild for build
-- Jest for testing
-- ESLint
+- [React 17 + React Dom](https://reactjs.org/blog/2020/10/20/react-v17.html)
+- [React Router 5](https://reactrouter.com/)
+- [i18next](https://react.i18next.com/) for localization
+- [snowpack](https://www.snowpack.dev/) as the building tool
+- [Jest](https://jestjs.io/) for testing
+- [ESLint](https://eslint.org/)
 
 ## Getting started
-
-### Install [node](https://nodejs.org/) 15.x, which brings [npm](https://www.npmjs.com/) 7.x
-
-```sh
-nvm install node
-```
 
 ### Install the basic dependencies
 
@@ -23,49 +18,24 @@ npm install
 
 ## Running the project
 
-This boilerplate builds the app as an [ECMAScript Module](https://nodejs.org/api/esm.html), which is loaded in `index.html` as `type=module`:
+Snowpack builds the app as an [ECMAScript Module](https://nodejs.org/api/esm.html), which is loaded in `index.html` as `type=module`:
 
 ```html
-<script type="module" src="./dist/app.mjs"></script>
+<script type="module" src="/dist/index.js"></script>
 ```
 
-So to see the app working, you should run it in an HTTP server, which is already provided here. Just run
+So to see the app working, you should run it in an HTTP server, which is already provided by Snowpack. Just run
 
 ```sh
-npm run serve
+snowpack dev
 ```
 
-and go to `http://localhost:5000` and check it out!
+and go to `http://localhost:8080` and check it out! Everytime you change the code, the [HMR](https://github.com/snowpackjs/esm-hmr) will keep the browser up-to-date!
 
 ### Building the app
 
-To build the app in the development environment, run
+To build the app for production just run
 
 ```sh
-npm run build:dev
+snowpack build
 ```
-
-and for production
-
-```sh
-npm run build:prod
-```
-
-Everytime you change the code, you have to rebuild the app to see the changes. To automate it during the development, you can install watchman [watchman](https://facebook.github.io/watchman/)
-
-```sh
-brew update
-brew install watchman
-```
-
-and run
-
-```sh
-npm run watch
-```
-
-Watchman is a lib that watches for change in code and run a command. In our case, it builds the app in a development environment.
-
-## Acknowledgement
-
-I'd like to thank [@charbelrami](https://github.com/charbelrami) who helped me with the boilerplate structure.
