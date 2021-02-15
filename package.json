@@ -1,24 +1,27 @@
 {
-  "name": "shared-template",
+  "name": "react-boilerplate-snowpack",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amravazzi/react-boilerplate-snowpack.git"
+  },
+  "license" : "MIT",
   "files": [
     "public/dist/**/*"
   ],
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "build:prod": "node scripts/build-prod.js && gzip -c dist/shared-component.mjs | wc -c",
-    "build:dev": "node scripts/build-dev.js",
-    "watch": "watchman-make -p 'src/**/*' --run \"npm run build:dev\"",
-    "serve": "serve public",
     "test": "jest"
   },
   "dependencies": {
+    "@snowpack/plugin-sass": "^1.3.0",
     "i18next": "^19.8.5",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-i18next": "^11.8.5",
+    "react-router-dom": "^5.2.0",
     "store2": "^2.12.0"
   },
   "devDependencies": {
