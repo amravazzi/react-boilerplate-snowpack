@@ -1,0 +1,298 @@
+{
+  "inputs": {
+    "_snowpack/pkg/common/_commonjsHelpers-eb5a497e.js": {
+      "bytes": 666,
+      "imports": []
+    },
+    "_snowpack/pkg/common/index-d0e3fe20.js": {
+      "bytes": 8631,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-eb5a497e.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/react.js": {
+      "bytes": 310,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-d0e3fe20.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-d0e3fe20.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-eb5a497e.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/react-dom.js": {
+      "bytes": 127563,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-eb5a497e.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-d0e3fe20.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/i18next.js": {
+      "bytes": 78027,
+      "imports": []
+    },
+    "_snowpack/pkg/react-i18next.js": {
+      "bytes": 11330,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-d0e3fe20.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-eb5a497e.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/locales/i18n.js": {
+      "bytes": 583,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/i18next.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-i18next.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/counter/counter.hook.js": {
+      "bytes": 328,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/prop-types.js": {
+      "bytes": 2303,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-eb5a497e.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/counter/counter.component.js": {
+      "bytes": 1046,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/counter/counter.hook.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/prop-types.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-i18next.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/counter/index.js": {
+      "bytes": 39,
+      "imports": [
+        {
+          "path": "dist/components/counter/counter.component.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/env.js": {
+      "bytes": 176,
+      "imports": []
+    },
+    "dist/utils/fetch/fetch.hook.js": {
+      "bytes": 1101,
+      "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/utils/fetch/index.js": {
+      "bytes": 32,
+      "imports": [
+        {
+          "path": "dist/utils/fetch/fetch.hook.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/views/Home/index.js": {
+      "bytes": 921,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/utils/fetch/index.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/text/text.component.js": {
+      "bytes": 376,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/prop-types.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/text/index.js": {
+      "bytes": 36,
+      "imports": [
+        {
+          "path": "dist/components/text/text.component.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/views/Locales/index.js": {
+      "bytes": 887,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-i18next.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/text/index.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/index.js": {
+      "bytes": 633,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/locales/i18n.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/counter/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/views/Home/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/views/Locales/index.js",
+          "kind": "import-statement"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/dist/index.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "_snowpack/pkg/common/_commonjsHelpers-eb5a497e.js": {
+          "bytesInOutput": 374
+        },
+        "_snowpack/pkg/common/index-d0e3fe20.js": {
+          "bytesInOutput": 6912
+        },
+        "_snowpack/pkg/react.js": {
+          "bytesInOutput": 49
+        },
+        "_snowpack/pkg/react-dom.js": {
+          "bytesInOutput": 123835
+        },
+        "_snowpack/pkg/i18next.js": {
+          "bytesInOutput": 42058
+        },
+        "_snowpack/pkg/react-i18next.js": {
+          "bytesInOutput": 5944
+        },
+        "dist/locales/i18n.js": {
+          "bytesInOutput": 306
+        },
+        "dist/components/counter/counter.hook.js": {
+          "bytesInOutput": 97
+        },
+        "_snowpack/pkg/prop-types.js": {
+          "bytesInOutput": 745
+        },
+        "dist/components/counter/counter.component.js": {
+          "bytesInOutput": 456
+        },
+        "dist/components/counter/index.js": {
+          "bytesInOutput": 0
+        },
+        "_snowpack/env.js": {
+          "bytesInOutput": 46
+        },
+        "dist/utils/fetch/fetch.hook.js": {
+          "bytesInOutput": 400
+        },
+        "dist/utils/fetch/index.js": {
+          "bytesInOutput": 0
+        },
+        "dist/views/Home/index.js": {
+          "bytesInOutput": 465
+        },
+        "dist/components/text/text.component.js": {
+          "bytesInOutput": 143
+        },
+        "dist/components/text/index.js": {
+          "bytesInOutput": 0
+        },
+        "dist/views/Locales/index.js": {
+          "bytesInOutput": 412
+        },
+        "dist/index.js": {
+          "bytesInOutput": 192
+        }
+      },
+      "bytes": 182486
+    }
+  }
+}
