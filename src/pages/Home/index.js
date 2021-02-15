@@ -2,8 +2,9 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Text } from "../../components/text";
 import { useLS } from "../../utils/local-storage";
+import styles from "./home.module.css";
 
-function Locales() {
+function Home() {
     const { t, i18n } = useTranslation();
     const { lsSet } = useLS();
 
@@ -18,6 +19,7 @@ function Locales() {
 
         <span>{t("change_lang")}: </span>
         <button
+          className={styles.button}
           type="button"
           onClick={() => changeLanguage("pt")}
           disabled={i18n.language === "pt"}
@@ -26,6 +28,7 @@ function Locales() {
         </button>
 
         <button
+          className={styles.button}
           type="button"
           onClick={() => changeLanguage("en")}
           disabled={i18n.language === "en"}
@@ -36,4 +39,4 @@ function Locales() {
     );
 }
 
-export { Locales };
+export { Home };
